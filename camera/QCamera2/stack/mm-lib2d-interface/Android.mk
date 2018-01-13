@@ -15,6 +15,7 @@ LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
 IMGLIB_HEADER_PATH := $(TARGET_OUT_INTERMEDIATES)/include/mm-camera/imglib
 
 LOCAL_C_INCLUDES += \
+    $(call project-path-for,qcom-display)/libgralloc
     $(IMGLIB_HEADER_PATH) \
     $(LOCAL_PATH)/inc \
     $(LOCAL_PATH)/../common

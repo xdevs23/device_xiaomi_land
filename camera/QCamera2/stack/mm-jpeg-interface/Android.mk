@@ -13,6 +13,7 @@ LOCAL_C_INCLUDES+= $(kernel_includes)
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
 
 LOCAL_C_INCLUDES += \
+    $(call project-path-for,qcom-display)/libgralloc
     frameworks/native/include/media/openmax \
     $(LOCAL_PATH)/inc \
     $(LOCAL_PATH)/../common \
