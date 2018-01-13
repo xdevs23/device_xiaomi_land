@@ -75,8 +75,8 @@
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 
-    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">true</bool>
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option
+    <bool name="config_intrusiveBatteryLed">true</bool> -->
 
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
          on the headphone/microphone jack. When false use the older uevent framework. -->
@@ -113,8 +113,8 @@
             32 - Camera
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
-         config to 7. -->
-    <integer name="config_deviceHardwareKeys">83</integer>
+         config to 7. 
+    <integer name="config_deviceHardwareKeys">83</integer> -->
 
     <!-- Control the behavior when the user long presses the home button.
             0 - Nothing
@@ -354,8 +354,8 @@
          Refer to power.h for details. -->
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
     
-    <!-- Whether notify fingerprint client of successful cancelled authentication -->
-    <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
+    <!-- Whether notify fingerprint client of successful cancelled authentication
+    <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool> -->
 
     <!-- ImsService package name to bind to by default, if config_dynamic_bind_ims is true -->
     <string name="config_ims_package">org.codeaurora.ims</string>
@@ -382,6 +382,6 @@
 
     <bool name="config_showNavigationBar">false</bool>
 
-    <integer name="config_buttonBrightnessSettingDefault">0</integer>
+    <!--integer name="config_buttonBrightnessSettingDefault">0</integer-->
 
 </resources>
