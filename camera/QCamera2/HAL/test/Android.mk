@@ -30,7 +30,7 @@ LOCAL_CFLAGS += -DUSE_JB_MR1
 endif
 
 LOCAL_C_INCLUDES += \
-    $(call project-path-for,qcom-display)/libgralloc
+    $(call project-path-for,qcom-display)/libgralloc \
     frameworks/base/include/ui \
     frameworks/base/include/surfaceflinger \
     frameworks/base/include/camera \
