@@ -19,18 +19,18 @@ DEVICE_PATH := device/xiaomi/land
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from land device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
-# Call QCOM Utils
-$(call inherit-product, $(DEVICE_PATH)/utils.mk)
+# Inherit some common stuff.
+$(call inherit-product, vendor/xos/config/common.mk)
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := land
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosp_land
+PRODUCT_NAME := XOS_land
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
